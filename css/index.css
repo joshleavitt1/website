@@ -38,10 +38,13 @@ body {
 
   .hero {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .hero__content {
     flex-basis: auto;
+    text-align: left;
+    width: 100%;
   }
 }
