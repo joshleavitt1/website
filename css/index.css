@@ -47,6 +47,57 @@ body {
   font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
 }
 
+.hero__tagline {
+  margin: 1.5rem 0 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button--primary {
+  background-color: #006aff;
+  color: #ffffff;
+  border: none;
+}
+
+.button--outline {
+  background: none;
+  color: #ffffff;
+  border: 2px solid #006aff;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 106, 255, 0.25);
+}
+
+.button:focus {
+  outline: 2px solid rgba(0, 106, 255, 0.6);
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 2rem 1.5rem;
