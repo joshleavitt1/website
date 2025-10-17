@@ -25,6 +25,20 @@ body {
   flex: 1 1 50%;
 }
 
+.hero__media {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero__media img {
+  width: 560px;
+  height: 400px;
+  max-width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 .hero__content h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.1;
@@ -44,5 +58,13 @@ body {
 
   .hero__content {
     flex-basis: auto;
+  }
+
+  .hero__media {
+    justify-content: center;
+  }
+
+  .hero__media img {
+    height: auto;
   }
 }
